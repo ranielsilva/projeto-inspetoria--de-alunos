@@ -7,27 +7,15 @@ public class Turno {
     private LocalTime horaInicio;
     private LocalTime horaFim;
 
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public void setId(int id) { this.id = id; }
 
-    public LocalTime getHoraInicio() {
-        return horaInicio;
-    }
+    public LocalTime getHoraInicio() { return horaInicio; }
 
-    public void setHoraInicio(LocalTime horaInicio) {
-        this.horaInicio = horaInicio;
-    }
+    public void setHoraInicio(LocalTime horaInicio) { this.horaInicio = horaInicio; }
 
-    public LocalTime getHoraFim() {
-        return horaFim;
-    }
+    public LocalTime getHoraFim() { return horaFim; }
 
-    public void setHoraFim(LocalTime horaFim) {
-        this.horaFim = horaFim;
-    }
+    public void setHoraFim(LocalTime horaFim) { this.horaFim = horaFim; }
 }
