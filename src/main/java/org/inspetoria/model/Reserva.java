@@ -1,4 +1,4 @@
-package org.example;
+package org.inspetoria.model;
 
 import java.time.LocalDateTime;
 
@@ -9,6 +9,16 @@ public class Reserva {
     private SalaDeAula salaDeAula;
     private Turma turma;
     private Professor professor;
+
+
+    public Reserva(int id, LocalDateTime dataHora, Turno turno, SalaDeAula salaDeAula, Turma turma, Professor professor) {
+        this.id = id;
+        this.dataHora = dataHora;
+        this.turno = turno;
+        this.salaDeAula = salaDeAula;
+        this.turma = turma;
+        this.professor = professor;
+    }
 
     public int getId() { return id; }
 

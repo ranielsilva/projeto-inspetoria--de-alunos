@@ -1,9 +1,15 @@
-package org.example;
+package org.inspetoria.model;
 
 public class Curso {
     private int id;
     private String nome;
     private int numeroPeriodo;
+
+    public Curso(int id, String nome, int numeroPeriodo) {
+        this.id = id;
+        this.nome = nome;
+        this.numeroPeriodo = numeroPeriodo;
+    }
 
     public int getId() { return id; }
 

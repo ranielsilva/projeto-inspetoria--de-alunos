@@ -1,13 +1,26 @@
-package org.example;
+package org.inspetoria.model;
 
 import java.time.LocalTime;
 
 public class Turno {
     private int id;
+    private String nome;
     private LocalTime horaInicio;
     private LocalTime horaFim;
 
+
+    public Turno(int id, String nome, LocalTime horaInicio, LocalTime horaFim) {
+        this.id = id;
+        this.nome = nome;
+        this.horaInicio = horaInicio;
+        this.horaFim = horaFim;
+    }
+
     public int getId() { return id; }
+
+    public String getNome() { return nome; }
+
+    public void setNome(String nome) { this.nome = nome; }
 
     public void setId(int id) { this.id = id; }
 

@@ -1,4 +1,4 @@
-package org.example;
+package org.inspetoria.model;
 
 public class Turma {
     private int id;
@@ -7,6 +7,16 @@ public class Turma {
     private Disciplina disciplina;
     private Periodo periodo;
     private Curso curso;
+
+
+    public Turma(int id, String codigo, Professor professor, Disciplina disciplina, Periodo periodo, Curso curso) {
+        this.id = id;
+        this.codigo = codigo;
+        this.professor = professor;
+        this.disciplina = disciplina;
+        this.periodo = periodo;
+        this.curso = curso;
+    }
 
     public int getId() { return id; }
 

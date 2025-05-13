@@ -1,13 +1,25 @@
-package org.example;
+package org.inspetoria.model;
+
+import java.time.LocalDate;
 
 public class Professor {
     private int id;
     private String nome;
-    private String dataNascimento;
+    private LocalDate dataNascimento;
     private String cpf;
     private String email;
     private String endereco;
     private String telefone;
+
+    public Professor(int id, String nome, LocalDate dataNascimento, String cpf, String email, String endereco, String telefone) {
+        this.id = id;
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.cpf = cpf;
+        this.email = email;
+        this.endereco = endereco;
+        this.telefone = telefone;
+    }
 
     public int getId() { return id; }
 
@@ -17,9 +29,11 @@ public class Professor {
 
     public void setNome(String nome) { this.nome = nome; }
 
-    public String getDataNascimento() { return dataNascimento; }
+    public LocalDate getDataNascimento() { return dataNascimento; }
 
-    public void setDataNascimento(String dataNascimento) { this.dataNascimento = dataNascimento; }
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
 
     public String getCpf() { return cpf; }
 

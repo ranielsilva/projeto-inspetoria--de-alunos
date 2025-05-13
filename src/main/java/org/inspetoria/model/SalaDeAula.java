@@ -1,10 +1,17 @@
-package org.example;
+package org.inspetoria.model;
 
 public class SalaDeAula {
     private int id;
     private String nome;
     private int capacidade;
     private String localizacao;
+
+    public SalaDeAula(int id, String nome, int capacidade, String localizacao) {
+        this.id = id;
+        this.nome = nome;
+        this.capacidade = capacidade;
+        this.localizacao = localizacao;
+    }
 
     public int getId() { return id; }
 

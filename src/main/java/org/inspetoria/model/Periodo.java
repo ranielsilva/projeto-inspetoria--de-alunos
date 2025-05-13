@@ -1,10 +1,17 @@
-package org.example;
+package org.inspetoria.model;
 
 public class Periodo {
     private int id;
     private String nome;
     private int ano;
     private int semestre;
+
+    public Periodo(int id, String nome, int ano, int semestre) {
+        this.id = id;
+        this.nome = nome;
+        this.ano = ano;
+        this.semestre = semestre;
+    }
 
     public int getId() {return id; }
 
