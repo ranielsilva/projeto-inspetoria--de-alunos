@@ -12,6 +12,11 @@ public class SalaDeAula {
         this.capacidade = capacidade;
         this.localizacao = localizacao;
     }
+    public SalaDeAula() {
+        this.nome = nome;
+        this.capacidade = capacidade;
+        this.localizacao = localizacao;
+    }
 
     public int getId() { return id; }
 

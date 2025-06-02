@@ -15,6 +15,11 @@ public class Turno {
         this.horaInicio = horaInicio;
         this.horaFim = horaFim;
     }
+    public Turno() {
+        this.nome = nome;
+        this.horaInicio = horaInicio;
+        this.horaFim = horaFim;
+    }
 
     public int getId() { return id; }
 

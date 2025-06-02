@@ -7,12 +7,20 @@ public class Professor {
     private String nome;
     private LocalDate dataNascimento;
     private String cpf;
-    private String email;
     private String endereco;
+    private String email;
     private String telefone;
 
-    public Professor(int id, String nome, LocalDate dataNascimento, String cpf, String email, String endereco, String telefone) {
+    public Professor(int id, String nome, LocalDate dataNascimento, String cpf, String endereco, String email, String telefone) {
         this.id = id;
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.cpf = cpf;
+        this.email = email;
+        this.endereco = endereco;
+        this.telefone = telefone;
+    }
+    public Professor() {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.cpf = cpf;

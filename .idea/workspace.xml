@@ -5,15 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49bba170-dadb-4271-9859-fc0fd1524db1" name="Changes" comment="modificação na classe Turno">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/conf/Conexao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/CursoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/DisciplinaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/PeriodoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/ProfessorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/ReservaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/SalaDeAulaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/TurmaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/TurnoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/CursoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/DisciplinaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/PeriodoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/ProfessorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/ReservaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/SalaDeAulaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/TurmaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/TurnoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Curso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Disciplina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Periodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Periodo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Reserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SalaDeAula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/SalaDeAula.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Turma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Turno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Curso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Disciplina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Periodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Periodo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Reserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Reserva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/SalaDeAula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/SalaDeAula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Turma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Turno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,43 +49,74 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ranielsilva"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ranielsilva&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ranielsilva/projeto-inspetoria--de-alunos.git",
-    "accountId": "fabf5f42-1629-4ff6-891d-35ac8f7dd366"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ranielsilva/projeto-inspetoria--de-alunos.git&quot;,
+    &quot;accountId&quot;: &quot;fabf5f42-1629-4ff6-891d-35ac8f7dd366&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2x3nE9531ynwL7ohBC1fXT86M6v" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/ranie/IdeaProjects/inspetoria_de_alunos/src/main/java/org/example/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ranie/IdeaProjects/inspetoria_de_alunos/src/main/java/org/example/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.inspetoria.Main" />
+      <module name="inspetoria_de_alunos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.inspetoria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,6 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747175513547</updated>
       <workItem from="1747175515073" duration="4277000" />
+      <workItem from="1748805898414" duration="18701000" />
     </task>
     <task id="LOCAL-00001" summary="criação do projeto inspetoria de alunos">
       <option name="closed" value="true" />

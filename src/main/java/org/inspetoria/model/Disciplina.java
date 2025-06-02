@@ -9,6 +9,10 @@ public class Disciplina {
         this.nome = nome;
     }
 
+    public Disciplina() {
+        this.nome = nome;
+    }
+
     public int getId() { return id; }
 
     public void setId(int id) { this.id = id; }

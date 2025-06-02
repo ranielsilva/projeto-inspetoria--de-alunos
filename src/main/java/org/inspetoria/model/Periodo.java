@@ -12,6 +12,11 @@ public class Periodo {
         this.ano = ano;
         this.semestre = semestre;
     }
+    public Periodo() {
+        this.nome = nome;
+        this.ano = ano;
+        this.semestre = semestre;
+    }
 
     public int getId() {return id; }
 

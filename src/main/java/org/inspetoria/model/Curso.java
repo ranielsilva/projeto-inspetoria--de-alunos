@@ -11,6 +11,11 @@ public class Curso {
         this.numeroPeriodo = numeroPeriodo;
     }
 
+    public Curso(){
+        this.nome = nome;
+        this.numeroPeriodo = numeroPeriodo;
+    }
+
     public int getId() { return id; }
 
     public void setId(int id) { this.id = id; }

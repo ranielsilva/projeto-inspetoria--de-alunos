@@ -19,6 +19,13 @@ public class Reserva {
         this.turma = turma;
         this.professor = professor;
     }
+    public Reserva(LocalDateTime dataHora, Turno turno, SalaDeAula salaDeAula, Turma turma, Professor professor) {
+        this.dataHora = dataHora;
+        this.turno = turno;
+        this.salaDeAula = salaDeAula;
+        this.turma = turma;
+        this.professor = professor;
+    }
 
     public int getId() { return id; }
 

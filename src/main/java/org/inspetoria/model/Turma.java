@@ -17,6 +17,13 @@ public class Turma {
         this.periodo = periodo;
         this.curso = curso;
     }
+    public Turma() {
+        this.codigo = codigo;
+        this.professor = professor;
+        this.disciplina = disciplina;
+        this.periodo = periodo;
+        this.curso = curso;
+    }
 
     public int getId() { return id; }
 
