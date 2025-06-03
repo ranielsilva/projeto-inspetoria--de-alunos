@@ -4,6 +4,7 @@ import org.inspetoria.dao.CursoDao;
 import org.inspetoria.model.Curso;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class CursoService {
     private CursoDao cursoDao;
@@ -24,7 +25,7 @@ public class CursoService {
         cursoDao.inserir(curso);
         return true;
     }
-    public boolean excluir(Curso curso){
+    public boolean excluir(Curso curso)  throws SQLException {
         if (curso.getId() == 0)
             return false;
 

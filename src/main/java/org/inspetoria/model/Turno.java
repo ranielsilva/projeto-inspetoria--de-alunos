@@ -15,11 +15,12 @@ public class Turno {
         this.horaInicio = horaInicio;
         this.horaFim = horaFim;
     }
-    public Turno() {
+    public Turno(String nome, LocalTime horaInicio, LocalTime horaFim) {
         this.nome = nome;
         this.horaInicio = horaInicio;
         this.horaFim = horaFim;
     }
+    public Turno(int id) {this.id = id;}
 
     public int getId() { return id; }
 

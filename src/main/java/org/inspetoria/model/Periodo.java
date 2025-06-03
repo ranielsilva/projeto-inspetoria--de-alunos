@@ -12,11 +12,12 @@ public class Periodo {
         this.ano = ano;
         this.semestre = semestre;
     }
-    public Periodo() {
+    public Periodo(String nome, int ano, int semestre) {
         this.nome = nome;
         this.ano = ano;
         this.semestre = semestre;
     }
+    public Periodo(int id) {this.id = id;}
 
     public int getId() {return id; }
 

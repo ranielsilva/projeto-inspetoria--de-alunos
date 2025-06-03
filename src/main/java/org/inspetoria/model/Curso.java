@@ -11,10 +11,11 @@ public class Curso {
         this.numeroPeriodo = numeroPeriodo;
     }
 
-    public Curso(){
+    public Curso(String nome, int numeroPeriodo){
         this.nome = nome;
         this.numeroPeriodo = numeroPeriodo;
     }
+    public Curso(int id) {this.id = id;}
 
     public int getId() { return id; }
 

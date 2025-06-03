@@ -44,7 +44,7 @@ public class CursoDao {
         }
     }
 
-    public void excluir(Curso curso){
+    public void excluir(Curso curso)  throws SQLException{
         try {
             String SQL = "DELETE FROM curso WHERE id = ?";
 

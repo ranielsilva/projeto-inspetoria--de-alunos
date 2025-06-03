@@ -20,13 +20,17 @@ public class Professor {
         this.endereco = endereco;
         this.telefone = telefone;
     }
-    public Professor() {
+    public Professor(String nome, LocalDate dataNascimento, String cpf, String endereco, String email, String telefone) {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.cpf = cpf;
         this.email = email;
         this.endereco = endereco;
         this.telefone = telefone;
+    }
+    public Professor(int id) {
+        this.id = id;
+
     }
 
     public int getId() { return id; }

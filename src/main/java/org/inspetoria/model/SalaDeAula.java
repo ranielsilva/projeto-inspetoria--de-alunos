@@ -12,11 +12,12 @@ public class SalaDeAula {
         this.capacidade = capacidade;
         this.localizacao = localizacao;
     }
-    public SalaDeAula() {
+    public SalaDeAula(String nome, int capacidade, String localizacao) {
         this.nome = nome;
         this.capacidade = capacidade;
         this.localizacao = localizacao;
     }
+    public SalaDeAula(int id) {this.id = id;}
 
     public int getId() { return id; }
 

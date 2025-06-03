@@ -26,6 +26,15 @@ public class Reserva {
         this.turma = turma;
         this.professor = professor;
     }
+    public Reserva(int id) {this.id = id;}
+
+    public Reserva() {
+        this.dataHora = dataHora;
+        this.turno = turno;
+        this.salaDeAula = salaDeAula;
+        this.turma = turma;
+        this.professor = professor;
+    }
 
     public int getId() { return id; }
 

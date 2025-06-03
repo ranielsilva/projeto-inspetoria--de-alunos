@@ -5,26 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49bba170-dadb-4271-9859-fc0fd1524db1" name="Changes" comment="modificação na classe Turno">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/conf/Conexao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/CursoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/DisciplinaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/PeriodoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/ProfessorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/ReservaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/SalaDeAulaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/TurmaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/TurnoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/CursoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/DisciplinaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/PeriodoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/ProfessorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/ReservaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/SalaDeAulaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/TurmaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/TurnoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuCurso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuDisciplina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuPeriodo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuProfessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuReserva.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuSalaDeAula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuTurma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuTurno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/CursoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/CursoDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Curso.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Disciplina.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Periodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Periodo.java" afterDir="false" />
@@ -33,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/SalaDeAula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/SalaDeAula.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Turma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/model/Turno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/CursoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/CursoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,17 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -135,6 +116,7 @@
       <updated>1747175513547</updated>
       <workItem from="1747175515073" duration="4277000" />
       <workItem from="1748805898414" duration="18701000" />
+      <workItem from="1748905085945" duration="15021000" />
     </task>
     <task id="LOCAL-00001" summary="criação do projeto inspetoria de alunos">
       <option name="closed" value="true" />

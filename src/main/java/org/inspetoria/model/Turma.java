@@ -17,12 +17,23 @@ public class Turma {
         this.periodo = periodo;
         this.curso = curso;
     }
-    public Turma() {
+    public Turma(String codigo, Professor professor, Disciplina disciplina, Periodo periodo, Curso curso) {
         this.codigo = codigo;
         this.professor = professor;
         this.disciplina = disciplina;
         this.periodo = periodo;
         this.curso = curso;
+    }
+    public Turma() {
+        this.id = id;
+        this.codigo = codigo;
+        this.professor = professor;
+        this.disciplina = disciplina;
+        this.periodo = periodo;
+        this.curso = curso;
+    }
+    public Turma(int id) {
+        this.id = id;
     }
 
     public int getId() { return id; }
