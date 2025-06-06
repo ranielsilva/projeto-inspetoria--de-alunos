@@ -23,7 +23,7 @@ public class MenuReserva {
             System.out.println("0. Voltar");
             System.out.print("Escolha a opção desejada: ");
             op = scanner.nextInt();
-            scanner.nextLine(); // limpar buffer
+            scanner.nextLine();
 
             switch (op) {
                 case 1 -> {

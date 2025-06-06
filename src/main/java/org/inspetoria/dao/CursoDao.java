@@ -12,6 +12,7 @@ public class CursoDao {
     private Conexao conexao;
     private PreparedStatement ps;
 
+
     public CursoDao(){
         conexao = new Conexao();
     }
@@ -41,6 +42,7 @@ public class CursoDao {
         } catch (SQLException ex) {
             ex.printStackTrace();
             System.out.println("Ocorreu um erro ao inserir o curso");
+
         }
     }
 

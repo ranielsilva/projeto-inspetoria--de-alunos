@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49bba170-dadb-4271-9859-fc0fd1524db1" name="Changes" comment="criação das classes Menu e implementação da entrada de dados via texto" />
+    <list default="true" id="49bba170-dadb-4271-9859-fc0fd1524db1" name="Changes" comment="criação das classes Menu e implementação da entrada de dados via texto">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/CursoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/CursoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuReserva.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,6 +101,7 @@
       <workItem from="1747175515073" duration="4277000" />
       <workItem from="1748805898414" duration="18701000" />
       <workItem from="1748905085945" duration="15491000" />
+      <workItem from="1749166451158" duration="5722000" />
     </task>
     <task id="LOCAL-00001" summary="criação do projeto inspetoria de alunos">
       <option name="closed" value="true" />
