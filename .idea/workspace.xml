@@ -4,26 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49bba170-dadb-4271-9859-fc0fd1524db1" name="Changes" comment="tratamento de exceções">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org.inspetoria/ReservaServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/conf/Conexao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/conf/Conexao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/ReservaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/ReservaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/SalaDeAulaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/SalaDeAulaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/CursoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/CursoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/ReservaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/ReservaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/SalaDeAulaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/SalaDeAulaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuCurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuCurso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuDisciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuDisciplina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuPeriodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuPeriodo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuProfessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuProfessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuReserva.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuSalaDeAula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuSalaDeAula.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuTurma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuTurma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuTurno.java" afterDir="false" />
+    <list default="true" id="49bba170-dadb-4271-9859-fc0fd1524db1" name="Changes" comment="testes com junit">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org.inspetoria/ReservaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org.inspetoria/ReservaServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +61,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ranie\IdeaProjects\projeto-inspetoria--de-alunos-teste2\db" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.ReservaServiceTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.inspetoria.Main" />
@@ -152,7 +139,7 @@
       <workItem from="1748905085945" duration="15491000" />
       <workItem from="1749166451158" duration="7319000" />
       <workItem from="1749264518496" duration="2398000" />
-      <workItem from="1749916498141" duration="5767000" />
+      <workItem from="1749916498141" duration="6862000" />
     </task>
     <task id="LOCAL-00001" summary="criação do projeto inspetoria de alunos">
       <option name="closed" value="true" />
@@ -194,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749172651371</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="testes com junit">
+      <option name="closed" value="true" />
+      <created>1749922360681</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749922360681</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +212,7 @@
     <MESSAGE value="modificação na classe Turno" />
     <MESSAGE value="criação das classes Menu e implementação da entrada de dados via texto" />
     <MESSAGE value="tratamento de exceções" />
-    <option name="LAST_COMMIT_MESSAGE" value="tratamento de exceções" />
+    <MESSAGE value="testes com junit" />
+    <option name="LAST_COMMIT_MESSAGE" value="testes com junit" />
   </component>
 </project>
