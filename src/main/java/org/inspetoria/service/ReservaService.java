@@ -60,4 +60,15 @@ public class ReservaService {
 
         return true;
     }
+    public ResultSet buscarReservasComProfessor() {
+        return reservaDao.buscarReservasComProfessor();
+    }
+
+    public ResultSet buscarSalaAulaMaisUtilizada(){
+        return reservaDao.buscarSalaAulaMaisUtilizada();
+    }
+
+    public ResultSet buscarAgendamentos(){
+        return reservaDao.buscarAgendamentos();
+    }
 }

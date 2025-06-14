@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49bba170-dadb-4271-9859-fc0fd1524db1" name="Changes" comment="criação das classes Menu e implementação da entrada de dados via texto">
+    <list default="true" id="49bba170-dadb-4271-9859-fc0fd1524db1" name="Changes" comment="tratamento de exceções">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org.inspetoria/ReservaServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/CursoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/CursoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/conf/Conexao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/conf/Conexao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/ReservaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/ReservaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/SalaDeAulaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/dao/SalaDeAulaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/CursoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/CursoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/ReservaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/ReservaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/SalaDeAulaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/service/SalaDeAulaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuCurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuCurso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuDisciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuDisciplina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuPeriodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuPeriodo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuProfessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuProfessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuReserva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuReserva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuSalaDeAula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuSalaDeAula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuTurma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuTurma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/inspetoria/ui/MenuTurno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,23 +61,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ranie/IdeaProjects/inspetoria_de_alunos/src/main/java/org/example/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.ReservaServiceTest.executor": "Run",
+    "JUnit.SalaDeAulaServiceTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/ranie/IdeaProjects/inspetoria_de_alunos/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="JUnit.ReservaServiceTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.inspetoria.Main" />
       <module name="inspetoria_de_alunos" />
@@ -76,9 +93,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReservaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inspetoria_de_alunos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.inspetoria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.inspetoria" />
+      <option name="MAIN_CLASS_NAME" value="org.inspetoria.ReservaServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SalaDeAulaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inspetoria_de_alunos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.inspetoria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.inspetoria" />
+      <option name="MAIN_CLASS_NAME" value="org.inspetoria.SalaDeAulaServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReservaServiceTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SalaDeAulaServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -101,7 +150,9 @@
       <workItem from="1747175515073" duration="4277000" />
       <workItem from="1748805898414" duration="18701000" />
       <workItem from="1748905085945" duration="15491000" />
-      <workItem from="1749166451158" duration="5722000" />
+      <workItem from="1749166451158" duration="7319000" />
+      <workItem from="1749264518496" duration="2398000" />
+      <workItem from="1749916498141" duration="5767000" />
     </task>
     <task id="LOCAL-00001" summary="criação do projeto inspetoria de alunos">
       <option name="closed" value="true" />
@@ -135,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748920440819</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tratamento de exceções">
+      <option name="closed" value="true" />
+      <created>1749172651371</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749172651371</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +216,7 @@
     <MESSAGE value="criação das classes e seus atributos" />
     <MESSAGE value="modificação na classe Turno" />
     <MESSAGE value="criação das classes Menu e implementação da entrada de dados via texto" />
-    <option name="LAST_COMMIT_MESSAGE" value="criação das classes Menu e implementação da entrada de dados via texto" />
+    <MESSAGE value="tratamento de exceções" />
+    <option name="LAST_COMMIT_MESSAGE" value="tratamento de exceções" />
   </component>
 </project>

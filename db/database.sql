@@ -27,7 +27,7 @@ CREATE TABLE `curso` (
   `nome` varchar(20) NOT NULL,
   `numero_periodos` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `curso` (
 
 LOCK TABLES `curso` WRITE;
 /*!40000 ALTER TABLE `curso` DISABLE KEYS */;
-INSERT INTO `curso` VALUES (1,'SI',5),(2,'SI',5);
+INSERT INTO `curso` VALUES (4,'Enfermagem',6),(5,'SI',5),(6,'medicina',8);
 /*!40000 ALTER TABLE `curso` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +51,7 @@ CREATE TABLE `disciplina` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -60,7 +60,7 @@ CREATE TABLE `disciplina` (
 
 LOCK TABLES `disciplina` WRITE;
 /*!40000 ALTER TABLE `disciplina` DISABLE KEYS */;
-INSERT INTO `disciplina` VALUES (1,'Banco de dados');
+INSERT INTO `disciplina` VALUES (1,'Banco de dados'),(3,'programação web'),(4,'estatística');
 /*!40000 ALTER TABLE `disciplina` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -77,7 +77,7 @@ CREATE TABLE `periodo` (
   `ano` int NOT NULL,
   `semestre` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -86,7 +86,7 @@ CREATE TABLE `periodo` (
 
 LOCK TABLES `periodo` WRITE;
 /*!40000 ALTER TABLE `periodo` DISABLE KEYS */;
-INSERT INTO `periodo` VALUES (1,'2025.1',2025,1);
+INSERT INTO `periodo` VALUES (1,'2025.1',2025,1),(3,'2025.2',2025,2);
 /*!40000 ALTER TABLE `periodo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -106,7 +106,7 @@ CREATE TABLE `professor` (
   `email` varchar(30) NOT NULL,
   `telefone` varchar(12) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -115,7 +115,7 @@ CREATE TABLE `professor` (
 
 LOCK TABLES `professor` WRITE;
 /*!40000 ALTER TABLE `professor` DISABLE KEYS */;
-INSERT INTO `professor` VALUES (1,'maria','1965-10-09','12345678912','maceio AL','maria@gamil.com','82987455623');
+INSERT INTO `professor` VALUES (1,'maria','1965-10-09','12345678912','maceio AL','maria@gamil.com','82987455623'),(4,'jose','1980-08-02','32165498778','rua da matança','jose@gmail.com','82988774455'),(5,'carlos','1964-05-06','65478912345','centro','carlos@gmail.com','8288996655'),(6,'fernando','1990-04-22','00221233400','maceió','fernando@gmail.com','825498745');
 /*!40000 ALTER TABLE `professor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,7 +142,7 @@ CREATE TABLE `reserva` (
   CONSTRAINT `fk_reserva_sala_aula` FOREIGN KEY (`id_sala_aula`) REFERENCES `sala_aula` (`id`),
   CONSTRAINT `fk_reserva_turma` FOREIGN KEY (`id_turma`) REFERENCES `turma` (`id`),
   CONSTRAINT `fk_reserva_turno` FOREIGN KEY (`id_turno`) REFERENCES `turno` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +151,7 @@ CREATE TABLE `reserva` (
 
 LOCK TABLES `reserva` WRITE;
 /*!40000 ALTER TABLE `reserva` DISABLE KEYS */;
-INSERT INTO `reserva` VALUES (1,'2025-06-01 21:50:16',1,1,1,1);
+INSERT INTO `reserva` VALUES (5,'2025-07-02 19:00:00',5,7,3,5),(6,'2025-07-02 19:00:00',5,6,4,4),(7,'2025-06-05 14:00:00',4,7,4,4),(8,'2025-06-20 08:00:00',1,7,5,5);
 /*!40000 ALTER TABLE `reserva` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -168,7 +168,7 @@ CREATE TABLE `sala_aula` (
   `capacidade` int NOT NULL,
   `localizacao` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -177,7 +177,7 @@ CREATE TABLE `sala_aula` (
 
 LOCK TABLES `sala_aula` WRITE;
 /*!40000 ALTER TABLE `sala_aula` DISABLE KEYS */;
-INSERT INTO `sala_aula` VALUES (1,'sala 10',30,'3ª andar');
+INSERT INTO `sala_aula` VALUES (1,'sala 10',30,'3ª andar'),(3,'sala 03',25,'2ª andar'),(5,'sala 02',30,'2ª andar'),(6,'sala 05',25,'2ª andar'),(7,'sala 07',40,'3ª andar');
 /*!40000 ALTER TABLE `sala_aula` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -204,7 +204,7 @@ CREATE TABLE `turma` (
   CONSTRAINT `fk_turma_disciplina` FOREIGN KEY (`id_disciplina`) REFERENCES `disciplina` (`id`),
   CONSTRAINT `fk_turma_periodo` FOREIGN KEY (`id_periodo`) REFERENCES `periodo` (`id`),
   CONSTRAINT `fk_turma_professor` FOREIGN KEY (`id_professor`) REFERENCES `professor` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -213,7 +213,7 @@ CREATE TABLE `turma` (
 
 LOCK TABLES `turma` WRITE;
 /*!40000 ALTER TABLE `turma` DISABLE KEYS */;
-INSERT INTO `turma` VALUES (1,'5',1,1,1,1);
+INSERT INTO `turma` VALUES (3,'20',1,1,1,4),(4,'10',4,3,3,5),(5,'15',5,4,1,5);
 /*!40000 ALTER TABLE `turma` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -230,7 +230,7 @@ CREATE TABLE `turno` (
   `hora_inicio` time NOT NULL,
   `hora_fim` time NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -239,7 +239,7 @@ CREATE TABLE `turno` (
 
 LOCK TABLES `turno` WRITE;
 /*!40000 ALTER TABLE `turno` DISABLE KEYS */;
-INSERT INTO `turno` VALUES (1,'matutino','08:00:00','11:00:00');
+INSERT INTO `turno` VALUES (1,'matutino','08:00:00','11:00:00'),(4,'vespertino','12:00:00','18:00:00'),(5,'noturno','19:00:00','22:00:00');
 /*!40000 ALTER TABLE `turno` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -252,4 +252,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-01 22:08:32
+-- Dump completed on 2025-06-14 14:30:03

@@ -82,4 +82,33 @@ public class ReservaDao {
             ex.printStackTrace();
         }
     }
+
+    public ResultSet buscarReservasComProfessor() {
+        try {
+            String SQL = "SELECT r.* FROM reserva r INNER JOIN professor p ON r.id_professor = p.id";
+            return conexao.getConn().createStatement().executeQuery(SQL);
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    }
+    public ResultSet buscarSalaAulaMaisUtilizada() {
+        try {
+            String SQL = "select s.nome as sala_nome, count(r.id) as total_reservas from reserva r inner join sala_aula s on r.id_sala_aula = s.id group by s.id, s.nome order by total_reservas desc limit 1";
+            return conexao.getConn().createStatement().executeQuery(SQL);
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    }
+
+    public ResultSet buscarAgendamentos() {
+        try {
+            String SQL = "select count(*) as total_agendamentos from reserva where date(data_hora) = '2025-07-02';";
+            return conexao.getConn().createStatement().executeQuery(SQL);
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    }
 }

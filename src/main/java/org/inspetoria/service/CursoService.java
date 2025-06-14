@@ -10,6 +10,7 @@ public class CursoService {
     private CursoDao cursoDao;
 
     public CursoService(){
+
         cursoDao = new CursoDao();
     }
 
