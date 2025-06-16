@@ -1,15 +1,10 @@
 package org.inspetoria.ui;
 
-import org.inspetoria.conf.Conexao;
-import org.inspetoria.model.*;
-import org.inspetoria.service.*;
-
 import org.inspetoria.model.Curso;
 import org.inspetoria.service.CursoService;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.Scanner;
 
 public class MenuCurso {
@@ -18,8 +13,8 @@ public class MenuCurso {
 
         int op = -1;
 
-        do{
-            try{
+        do {
+            try {
                 System.out.println("\n===== Menu Curso =====");
                 System.out.println("1. Inserir");
                 System.out.println("2. Listar");
@@ -30,7 +25,7 @@ public class MenuCurso {
                 op = scanner.nextInt();
                 scanner.nextLine();
 
-                switch (op){
+                switch (op) {
                     case 1 -> {
                         System.out.println("Digite o nome do curso: ");
                         String nome = scanner.nextLine();
@@ -39,8 +34,10 @@ public class MenuCurso {
 
                         Curso curso = new Curso(nome, num);
 
-                        if (cursoService.inserir(curso)) System.out.println("curso inserido com sucesso!");
-                        else System.out.println("curso não foi inserido!");
+                        if (cursoService.inserir(curso))
+                            System.out.println("curso inserido com sucesso!");
+                        else
+                            System.out.println("curso não foi inserido!");
                     }
                     case 2 -> {
                         System.out.println("\n===== Lista de Cursos =====");
@@ -59,7 +56,7 @@ public class MenuCurso {
                             System.out.println("Erro ao listar cursos.");
                         }
                     }
-                    case 3 ->{
+                    case 3 -> {
                         ResultSet rs = cursoService.listar();
                         try {
                             while (rs.next()) {
@@ -85,7 +82,6 @@ public class MenuCurso {
 
                         Curso curso = new Curso(id, nome, num);
 
-
                         if (cursoService.editar(curso)) {
                             System.out.println("Curso editado com sucesso!");
                         } else {
@@ -93,8 +89,7 @@ public class MenuCurso {
                         }
 
                     }
-                    case 4 ->{
-
+                    case 4 -> {
 
                         System.out.println("\n--- Excluir Curso ---");
                         System.out.print("ID do curso a excluir: ");
@@ -111,13 +106,12 @@ public class MenuCurso {
 
                     case 0 -> System.out.println("voltando...");
                 }
-            }catch (NumberFormatException e){
-                System.out.println("valor digitado não é válido.");;
+            } catch (NumberFormatException e) {
+                System.out.println("valor digitado não é válido.");
+                ;
             }
 
-
-        }while (op != 0);
-
+        } while (op != 0);
 
     }
 }

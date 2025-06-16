@@ -1,31 +1,28 @@
-package org.inspetoria;
-
-
 import org.inspetoria.service.ReservaService;
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.LocalDateTime;
 
 import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ReservaServiceTest {
     /**
-     * 📌 Título:  Retornar dados do professor que efetuou uma reserva.
+     * 📌 Título: Retornar dados do professor que efetuou uma reserva.
      *
      * 📋 Entidades Envolvidas:
      * - Reserva
      * - Professor
      *
      * 🎯 Objetivo:
-     * Verificar se o método buscarReservasComProfessor() retorna reservas que possuem um professor vunculado.
+     * Verificar se o método buscarReservasComProfessor() retorna reservas que
+     * possuem um professor vunculado.
      *
      * 📝 Descrição:
      * Este teste verifica os resultados retornados pela consulta no banco de dados,
-     * verificando se cada reserva tem um ID válido e se ao menos uma reserva foi encontrada.
+     * verificando se cada reserva tem um ID válido e se ao menos uma reserva foi
+     * encontrada.
      *
      * ✅ Saída Esperada:
      * ID da reserva com professor.
@@ -45,12 +42,12 @@ public class ReservaServiceTest {
             int idReserva = rs.getInt("id");
             assertTrue(idReserva > 0, "O ID da reserva deve ser maior que zero.");
             encontrou = true;
-            if (encontrou) System.out.println("id da reserva encontrada: " + idReserva);
+            if (encontrou)
+                System.out.println("id da reserva encontrada: " + idReserva);
         }
 
         assertTrue(encontrou, "Deveria existir pelo menos uma reserva com professor vinculado.");
     }
-
 
     /**
      * 📌 Título: Retornar qual a sala de aula mais utilizada.
@@ -60,16 +57,19 @@ public class ReservaServiceTest {
      * - SalaAula
      *
      * 🎯 Objetivo:
-     * Validar se o método buscarSalaAulaMaisUtilizada() retorna a sala com o maior número de reservas.
+     * Validar se o método buscarSalaAulaMaisUtilizada() retorna a sala com o maior
+     * número de reservas.
      *
      * 📝 Descrição:
-     * Executa a consulta SQL que calcula a sala mais utilizada com base na contagem de reservas.
+     * Executa a consulta SQL que calcula a sala mais utilizada com base na contagem
+     * de reservas.
      *
      * ✅ Saída Esperada:
      * Uma linha com o nome da sala e o número de reservas maior que zero.
      *
      * 🔗 Dependências:
-     * - É necessário ter pelo menos uma reserva no banco vinculada a uma sala de aula.
+     * - É necessário ter pelo menos uma reserva no banco vinculada a uma sala de
+     * aula.
      */
     @Test
     public void testBuscarSalaAulaMaisUtilizada() {
@@ -94,7 +94,6 @@ public class ReservaServiceTest {
 
     }
 
-
     /**
      * 📌 Título: Retornar a quantidade de agendamentos em um determinado dia.
      *
@@ -102,16 +101,19 @@ public class ReservaServiceTest {
      * - Reserva
      *
      * 🎯 Objetivo:
-     * Verificar se o método buscarAgendamentos() retorna corretamente o total de agendamentos para a data consultada.
+     * Verificar se o método buscarAgendamentos() retorna corretamente o total de
+     * agendamentos para a data consultada.
      *
      * 📝 Descrição:
-     * Executa a consulta que conta o número de reservas agendadas para uma data específica.
+     * Executa a consulta que conta o número de reservas agendadas para uma data
+     * específica.
      *
      * ✅ Saída Esperada:
      * Total de agendamentos em um determinado dia.
      *
      * 🔗 Dependências:
-     * - Deve existir pelo menos uma reserva na data que foi definida na consulta da Query do sql.
+     * - Deve existir pelo menos uma reserva na data que foi definida na consulta da
+     * Query do sql.
      * - A data usada para consulta não pode ser nula.
      */
     @Test

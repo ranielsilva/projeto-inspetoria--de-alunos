@@ -6,17 +6,16 @@ import org.inspetoria.model.Turno;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.LocalTime;
 
 public class TurnoDao {
     private Conexao conexao;
     private PreparedStatement ps;
 
-    public TurnoDao(){
+    public TurnoDao() {
         conexao = new Conexao();
     }
 
-    public ResultSet listar(){
+    public ResultSet listar() {
         try {
             return conexao.getConn().createStatement().executeQuery("SELECT * FROM turno");
         } catch (SQLException ex) {
@@ -26,13 +25,13 @@ public class TurnoDao {
         return null;
     }
 
-    public void inserir(Turno turno){
+    public void inserir(Turno turno) {
         try {
             String SQL = "INSERT INTO turno(nome, hora_inicio, hora_fim) " + "VALUES (?, ?, ?)";
 
             ps = conexao.getConn().prepareStatement(SQL);
 
-            ps.setString(1,turno.getNome());
+            ps.setString(1, turno.getNome());
             ps.setTime(2, java.sql.Time.valueOf(turno.getHoraInicio()));
             ps.setTime(3, java.sql.Time.valueOf(turno.getHoraFim()));
 
@@ -45,7 +44,7 @@ public class TurnoDao {
         }
     }
 
-    public void excluir(Turno turno){
+    public void excluir(Turno turno) {
         try {
             String SQL = "DELETE FROM turno WHERE id = ?";
 
@@ -61,16 +60,16 @@ public class TurnoDao {
         }
     }
 
-    public void editar(Turno turno){
+    public void editar(Turno turno) {
         try {
             String SQL = "UPDATE turno SET " + "nome= ?, hora_inicio= ?, hora_fim= ?" + "WHERE id=?";
 
             ps = conexao.getConn().prepareStatement(SQL);
 
-            ps.setString(1,turno.getNome());
+            ps.setString(1, turno.getNome());
             ps.setTime(2, java.sql.Time.valueOf(turno.getHoraInicio()));
             ps.setTime(3, java.sql.Time.valueOf(turno.getHoraFim()));
-            ps.setInt(4,turno.getId());
+            ps.setInt(4, turno.getId());
 
             ps.executeUpdate();
 

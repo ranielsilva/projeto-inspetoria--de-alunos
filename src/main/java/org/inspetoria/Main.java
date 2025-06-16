@@ -1,29 +1,18 @@
 package org.inspetoria;
 
-import org.inspetoria.conf.Conexao;
-import org.inspetoria.model.*;
-import org.inspetoria.service.*;
 import org.inspetoria.ui.*;
-
-import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
 
-
         Scanner scanner = new Scanner(System.in);
         int op = -1;
 
         do {
             try {
-
 
                 System.out.println("===== MENU PRINCIPAL =====");
                 System.out.println("1. Curso");
@@ -53,7 +42,7 @@ public class Main {
                     default -> System.out.println("Opção inválida!");
 
                 }
-            }catch (InputMismatchException e){
+            } catch (InputMismatchException e) {
                 System.out.println("Selecione uma opção válida");
                 scanner.nextLine();
             }
