@@ -1,4 +1,5 @@
-#📚 Projeto: Inspetoria de Alunos
+#Projeto Inspetoria de Alunos
+
 Este projeto é um sistema de controle de reservas de salas de aula, professores e turmas, voltado para a gestão da Inspetoria de Alunos de uma instituição de ensino.
 
 ✅ Tecnologias utilizadas:
